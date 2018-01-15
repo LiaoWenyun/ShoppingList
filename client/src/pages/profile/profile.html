@@ -1,0 +1,37 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color='secondary'>
+      <ion-title>profile</ion-title>
+   
+  </ion-navbar>
+ 
+
+</ion-header>
+
+<ion-content padding>
+    <div *ngIf='customer'>
+    <p>{{username}}</p>
+    <p>Name: {{name}}</p>
+    <p>Email: {{email}}</p>
+    <p>I Share Account with: {{shareWith}}</p>
+    <p>User who share Account with me: {{accountShare}}</p>
+    
+  </div>
+ 
+  <button ion-button (click)='changeUsername()'  color="dark">Reset Username</button>
+  <button ion-button (click)='changePassword()'  color="dark">Reset Password</button>
+  <button ion-button (click)='changeEmail()'  color="dark">Reset Email</button>
+  <button ion-button (click)='shareAccount()'  color="dark">Share Account</button>
+  <div style="width: 100%; padding: 0px; text-align:right;">
+      <button ion-button (click)='refresh()'  color="dark">Refresh Page</button>
+    </div>
+
+
+
+</ion-content>

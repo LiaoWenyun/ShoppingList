@@ -1,0 +1,22 @@
+{
+  "name": "store",
+  "version": "1.0.0",
+  "description": "this app allows customers to sign up, log in and log out with their passwords and usernames, they will also be able to see their profile and they can also write/delete commets and articles on their blog page  ",
+  "main": "server.js ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wenyun",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.0",
+    "mongoose": "^5.0.0-rc1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^3.0.1"
+  }
+}

@@ -8,8 +8,7 @@
 
 ![alt Text](../master/pictures/Screen Shot 2018-01-25 at 11.32.01 PM.png)
 
-![alt Text](../master/pictures/Screen Shot 2018-01-25 at 11.32.16 PM.png)
-
+![stack Overflow](http://lmsotfy.com/so.png)
 
 
 

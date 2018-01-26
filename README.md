@@ -1,12 +1,12 @@
 # ShoppingList
 
-![alt text](https://github.com/LiaoWenyun/ShoppingList/master/picture/1.png)
-![alt Text](https://github.com/LiaoWenyun/ShoppingList/master/picture/2.png)
+![alt text](https://github.com/LiaoWenyun/ShoppingList/master/pictures/1.png)
+![alt Text](https://github.com/LiaoWenyun/ShoppingList/master/pictures/2.png)
 
-![alt Text](https://github.com/LiaoWenyun/ShoppingList/master/picture/3.png)
-![alt Text](https://github.com/LiaoWenyun/ShoppingList/master/picture/4.png)
+![alt Text](https://github.com/LiaoWenyun/ShoppingList/master/pictures/3.png)
+![alt Text](https://github.com/LiaoWenyun/ShoppingList/master/pictures/4.png)
 
-![alt Text](https://github.com/LiaoWenyun/ShoppingList/master/picture/5.png)
+![alt Text](https://github.com/LiaoWenyun/ShoppingList/master/pictures/5.png)
 
 
 

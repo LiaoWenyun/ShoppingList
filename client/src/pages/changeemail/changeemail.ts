@@ -21,19 +21,20 @@ newEmail:String
 
   resetEmail(){
     if(this.newEmail!=null){
-    this.hmProvider.getNewEmail(this.newEmail).subscribe(data=>{
-    console.log(data)
+    let body = { email: this.newEmail }
+    this.hmProvider.Protected_post_request(body,'http://localhost:8000/userprofile/resetEmail').subscribe(data=>{
+    console.log(data);
     this.navCtrl.pop();
     },(err=>{
       console.log('there is an err occured in resetEmail')
-    }))
+    }));
   }else
   {
     let alert= this.alertCtrl.create({
       title: 'Email cannot be empty',
       buttons:['ok']
-    })
-    alert.present()
+    });
+    alert.present();
   }
   }
   ionViewDidLoad() {

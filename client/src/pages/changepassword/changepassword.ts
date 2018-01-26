@@ -39,8 +39,8 @@ showPass = false;
       })
       alert.present()
     }else{
-    let newPassword= this.newPassword 
-    this.hmProvider.getNewPassword(newPassword).subscribe(data=>{
+    let body = {password: this.newPassword }
+    this.hmProvider.Protected_post_request(body, 'http://localhost:8000/userprofile/resetPassword').subscribe(data=>{
     console.log(data)
     this.navCtrl.pop()
     })

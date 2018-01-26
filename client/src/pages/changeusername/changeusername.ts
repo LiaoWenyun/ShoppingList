@@ -30,11 +30,9 @@ c
       })
       alert.present()
     }else{
-    let newUsername= this.newUsername
-
-    this.hmProvider.getNewUsername(newUsername).subscribe(data=>{
+    let body ={ username: this.newUsername}
+    this.hmProvider.Protected_post_request(body,'http://localhost:8000/userprofile/resetUsername').subscribe(data=>{
     console.log(data)
-  
     this.navCtrl.pop()
     })
   }

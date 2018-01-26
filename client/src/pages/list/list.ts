@@ -35,7 +35,8 @@ addItems(){
     console.log('can not have null as item')
   }
   else{
-  this.hmProvider.addItem(this.Item).subscribe(data=>{
+  let body={item: this.Item}
+  this.hmProvider.Protected_post_request(body,'http://localhost:8000/shoppinglist/addItem').subscribe(data=>{
           this.items=data.item
           this.Item=null
 
@@ -45,7 +46,8 @@ addItems(){
   }
 }
 removeItems(){
-  this.hmProvider.removeItem(this.Item).subscribe(data=>{
+  let body={item: this.Item}
+  this.hmProvider.Protected_post_request(body,'http://localhost:8000/shoppinglist/removeItem').subscribe(data=>{
     this.items=data.item
     this.Item=null
   },

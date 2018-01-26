@@ -22,26 +22,27 @@ other_username: String
   }
 
 shareAccount(){
-  this.hmProvider.add_one_user(this.other_username).subscribe(data=>{
+  let body={shareWith: this.other_username}
+  this.hmProvider.Protected_post_request(body,'http://localhost:8000/userprofile/addOtherUser').subscribe(data=>{
     if(data.add){
       let alert= this.alertCtrl.create({
         title: data.share,
         buttons:['ok']
       })
-      alert.present()  
+      alert.present();  
 
     }else{
       let alert= this.alertCtrl.create({
         title: data.msg,
         buttons:['ok']
-      })
-      alert.present()
+      });
+      alert.present();
 
     }
-          this.other_username=null
+          this.other_username = null ;
   },err=>{
-    console.log('err: the user is not in accountShare')
-  })
+    console.log('err: the user is not in accountShare');
+  });
 }
 
   ionViewDidLoad() {
